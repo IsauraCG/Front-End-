@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para Favicon-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Link para Font-Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha384- UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <!-- Link Bootstrap 5.3.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <title>Reserva de Horas Médicas</title>
+  </head>
+  <body>
+    <header class="container bg-primary py-4">
+      <h2 class="text-center text-white">
+        <i class="fa-sharp fa-solid fa-stethoscope"></i>
+        Formulario Para Toma de Hora Médica
+      </h2>
+    </header>
+    <main>
+      <div class="container col-6 my-4">
+        <form action="exitoso.html" method="get">
+          <div class="mb-3">
+            <label for="#nombre" class="text-primary fw-bold mb-2">Nombre</label
+            ><br />
+            <input
+              type="text"
+              placeholder="Ingrese sólo texto"
+              id="nombre"
+              size="80"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="#apellidop" class="text-primary fw-bold mb-2"
+              >Apellido Paterno</label
+            ><br />
+            <input
+              type="text"
+              placeholder="Ingrese sólo texto"
+              id="apellidop"
+              size="80"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="#apellidom" class="text-primary fw-bold mb-2"
+              >Apellido Materno</label
+            ><br />
+            <input
+              type="text"
+              placeholder="Ingrese sólo texto"
+              id="apellidom"
+              size="80"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <p class="text-primary fw-bold mb-2">Dirección</p>
+            <label for="#calle" class="me-2">Calle/Pasaje </label>
+            <input
+              type="text"
+              id="calle"
+              size="40"
+              placeholder="Ingrese sólo texto"
+              required
+            />
+            <label for="#numero" class="ms-3"> Número </label>
+            <input type="text" id="numero" size="10" required /><br />
+          </div>
+          <div class="mb-3">
+            <label for="#especialidades" class="text-primary fw-bold mb-2"
+              >Especialidad</label
+            ><br />
+            <select name="" id="especialidades" required>
+              <option selected>Medicina Interna</option>
+              <option>Medicina General</option>
+              <option>Traumatología</option>
+              <option>Nutricionista</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <p class="text-primary fw-bold mb-2">Hora y Fecha</p>
+            <label for="#hora">Hora</label>
+            <input type="time" id="hora" required />
+            <label for="#fecha">Fecha</label>
+            <input type="date" id="fecha" required />
+          </div>
+          <div class="mb-5">
+            <label for="#email" class="text-primary fw-bold mb-2">Email</label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              size="40"
+              placeholder="tuemail@gmail.com"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <button type="submit" class="btn btn-primary">Confirmar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Script Bootstrap 5.3.0 Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

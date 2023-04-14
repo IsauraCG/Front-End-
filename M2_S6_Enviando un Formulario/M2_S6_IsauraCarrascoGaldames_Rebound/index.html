@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enviando un Formulario</title>
+
+    <!-- Link para Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Título-->
+    <div class="container my-5">
+      <h2 class="text-center">ENVIANDO UN FORMULARIO</h2>
+    </div>
+
+    <!-- Contenedor -->
+    <div class="container py-5">
+      <!-- Formulario -->
+      <form class="row g-3" id="formulario" action="message.html" method="get">
+        <!-- NOMBRE -->
+        <div class="col-md-4">
+          <label for="inputnombre" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputnombre"
+            placeholder="Marcos"
+          />
+        </div>
+        <!-- APELLIDO -->
+        <div class="col-md-4">
+          <label for="inputapellido" class="form-label">Apellido</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputApellido"
+            placeholder="Ortega"
+          />
+        </div>
+        <!-- NOMBRE DE USUARIO -->
+        <div class="col-md-4">
+          <label for="inputGroupUsario" class="form-label"
+            >Nombre de usuario</label
+          >
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupUsario">@</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="marO"
+              aria-label="Username"
+              aria-describedby="inputGroupUsario"
+            />
+          </div>
+        </div>
+        <!-- CIUDAD -->
+        <div class="col-md-6">
+          <label for="inputcudad" class="form-label">Ciudad</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputciudad"
+            placeholder="Nueva York"
+          />
+        </div>
+        <!-- MOTIVO: DEPOSITO | GIRO | CONSULTA DE SALDO-->
+        <div class="col-md-3">
+          <label for="inputMotivo" class="form-label">Motivo</label>
+          <select id="inputMotivo" class="form-select">
+            <option selected value="deposito">Depósito</option>
+            <option value="giro">Giro</option>
+            <option value="consultaDeSaldo">Consulta de Saldo</option>
+          </select>
+        </div>
+        <!-- CHECKBOX DESEA VER RESPUESTA -->
+        <p class="mb-0">¿Desea ver la respuesta en patalla?</p>
+        <div class="form-check ms-2">
+          <label class="form-check-label ms-2" for="checkbox"> Sí </label>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="si"
+            id="checkbox"
+            checked
+          />
+        </div>
+        <!-- BOTÓN -->
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Script Bootstrap 5 Blundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

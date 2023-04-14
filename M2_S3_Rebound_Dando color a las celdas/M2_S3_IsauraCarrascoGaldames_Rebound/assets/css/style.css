@@ -1,0 +1,37 @@
+header h1{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;"Helvetica Neue",
+}
+
+div{
+    align-content: center;
+    margin:10% 0 20% 30%;
+}
+
+table {
+    width: 60%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    height: 50px;
+    border: 2px;
+    border-color: white;
+}
+
+.rojo { background-color: red; color: white;}
+.blanco { background-color:white;}
+.verde { background-color:green; color: white;}
+.gris { background-color:grey; color: white;}
+.cafe { background-color:brown; color: white;}
+.azul { background-color:darkblue; color: white;}
+.violeta { background-color:violet; }
+.rosado { background-color:pink; }
+.amarillo { background-color:yellow;}
+.turquesa { background-color:cyan; }
+.naranjo { background-color:orange; color:white}
+.purpura { background-color:purple; color:white}
+.negro { background-color:black; color:white}
