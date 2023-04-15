@@ -182,6 +182,23 @@ console.log(
 
 console.log(miAuto1);
 
+/* AGREGAR ATRIBUTO A UN OBJETO
+Cuando trabajamos con objetos, definimos sus atributos, pero siempre se pueden agregar nuevas
+propiedades o atributos al objeto previamente definido.
+Al objeto miAuto1 le agregaremos un nuevo atributo: patente.
+ */
+
+miAuto1.patente = "AKGT-15";
+
+// veamos ahora que pasó con ambos objetos, imprimamos cada uno de ellos
+
+console.log(miAuto1);
+console.log(miAuto2);
+
+/* Al agregar un atributo al objeto auto1, este se agrega solo al objeto que indicamos y 
+no afecta al resto de los objetos. */
+
+
 /* EJERCICIO
 
 Solicitaremos al usuario una opción y dependiendo de su opción le mostraremos una alerta con los 
@@ -199,6 +216,8 @@ do {
           miAuto1.numeroPuertas +
           "\n Marca: " +
           miAuto1.marca +
+          "\n Patente: " +
+          miAuto1.patente +
           "\n Conductor: " +
           miAuto1.conductor.nombre +
           " , " +

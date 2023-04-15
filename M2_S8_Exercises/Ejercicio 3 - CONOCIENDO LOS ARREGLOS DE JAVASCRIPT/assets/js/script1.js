@@ -45,12 +45,25 @@ for (let i = 0; i < paises.length; i++) {
 
   if (i <= 2) {
     alert(
-      "\n Recorriendo el ARRAY: \n \n El índice [" + i + "] es: " + paises[i]
+      "\nRecorriendo paises :\n \nFOR el índice [" + i + "] el país es: " + paises[i]
     );
   } else {
     alert("No hay más países");
   }
 }
+
+/* FOR OF
+Dentro de for, existe for of que ejecuta un bloque de código para cada elemento de un 
+objeto iterable. 
+*/
+
+for(let pais of paises){
+ console.log(pais);
+ // para cada elemento del arreglo paises se ejecuta el console.log
+ // además de la siguiente alerta para el usuario
+ alert("FOR elemento: ['" + pais + "'] OF arreglo paises.");
+}
+
 
 /* AÑADIR UN ELEMENTO AL PRINCIPIO DEL ARREGLO
 Utilizando el método unshift() el elemento añadido ocupa el índice cero, desplazando al resto un
@@ -59,7 +72,7 @@ lugar:
 paises.unshift("Uruguay","México","Taiwan");
 console.log(paises);
 alert(
-  "UNSHIFT añade un nuevo elemento al principio : \n \n " +
+  "UNSHIFT añade nuevos elementos al inicio : \n \n " +
     paises +
     "\n \n El ARRAY hora tiene " +
     paises.length +
@@ -73,7 +86,7 @@ función shift().
 paises.shift();
 console.log(paises);
 alert(
-  "SHIFT elimina el primer elemento : \n \n " +
+  "SHIFT elimina elementos del inicio : \n \n " +
     paises +
     "\n \n El ARRAY hora tiene " +
     paises.length +
@@ -84,10 +97,10 @@ alert(
 En este caso se usa la instrucción .push, desplazando el resto de los elementos de lugar:
 */
 
-paises.push("Perú");
+paises.push("Perú","Bolivia");
 console.log(paises);
 alert(
-  "PUSH añade un nuevo elemento al final : \n \n" +
+  "PUSH añade elementos al final : \n \n" +
     paises +
     "\n \n El ARRAY hora tiene " +
     paises.length +
@@ -99,14 +112,14 @@ Para eso usaremos la función pop(): */
 paises.pop();
 console.log(paises);
 alert(
-  "POP elimina el último elemento : \n \n " +
+  "POP elimina elementos desde el final: \n \n " +
     paises +
     "\n \n El ARRAY hora tiene " +
     paises.length +
     " elementos."
 );
 
-/* ENCONTRARA EL INDICE DE UN ELEMENTO DENTRO DEL ARREGLO  */
+/* ENCONTRAR EL INDICE DE UN ELEMENTO DENTRO DEL ARREGLO  */
 
 var pos = paises.indexOf("Chile"); // (pos) es la posición para abreviar
 console.log(pos);
@@ -142,6 +155,6 @@ var elementosEliminados = paises.splice(index, numElementos);
 console.log(paises);
 
 alert(
-  "SPLICE extrae varios elementos según su índice : \n \n Los elementos eliminados son  : " + 
-  elementosEliminados + "\n \n El nuevo ARRAY queda : [" + paises + "]"
+  "SPLICE extrae varios elementos según su índice : \n \nLos elementos eliminados son  : " + 
+  elementosEliminados + "\n \nEl nuevo ARRAY queda : [" + paises + "]"
 )
