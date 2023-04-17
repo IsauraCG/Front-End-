@@ -33,7 +33,7 @@ alert("Bienvenido/a a CITYBANK");
 
 // Se declaran e inicializan las variables que solicitan, mediante la función prompt,
 // los datos 'rut' y 'clave' al usuario , y los almacenan como strings
-var rutCliente = prompt("Ingrese su rut");
+var rutCliente = prompt("Ingrese su rut, sin puntos y con guión (Ejm: 12345678-9)");
 var claveCliente = prompt("Ingrese su clave");
 
 // variable booleana que indica el estado del usuario autorizado si es true, denegado si es false
