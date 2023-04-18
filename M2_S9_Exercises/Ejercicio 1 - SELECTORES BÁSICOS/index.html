@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S9 - JS EX 1 - Selectores Básicos</title>
+
+    <!-- Bootstrap v5.3.0  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container mt-5 w-75 contenedor">
+        <h1 class="text-center text-primary my-4 text-decoration-underline">
+          DOM , Nodos y Selectores básicos
+        </h1>
+        <h5 class="text-start text-secondary mt-5 justify-content-center">
+          Todo comienza con un proceso conocido como Critical Rendering Path, en
+          el cual los navegadores convierten en pixeles aquel código que hemos
+          escrito en nuestros archivos JavaScript, HTML y CSS. En este paso el
+          navegador crea dos Arboles: <br />
+          <br />
+          • DOM: representación del HTML. Su estructura en forma de árbol
+          contiene nodos, además, es dinámico. <br />
+          • CSSOM: Conjunto de APIs que permite manipular CSS desde JavaScript.
+          Permite leer y modificar el estilo de CSS de forma dinámica. <br />
+        </h5>
+        <p class="fw-bold text-start text-secondary mt-2" id="parrafo">
+          El DOM está compuesto por nodos, donde cada nodo son etiquetas HTML y
+          el CSSOM hace su parte con la manipulación de estilos.
+        </p>
+      </div>
+      <div class="container contenedor w-75 mb-5">
+        <p class="text-start text-secondary mt-3">
+          Algunos selectores básicos apra manipulación de elementos son: <br />
+          - getElementById <br />
+          - getElementsByTagName <br />
+          - getElementsByClassName <br />
+          - querySelector <br />
+          - querySelectorAll <br />
+        </p>
+        <p id="demo" class="text-start fw-bold text-center mt-3">
+          Párrafo ID #demo, cambiado via .innerHTML
+        </p>
+
+        <div class="text-center">
+          <button class="mt-2 mx-3" id="boton">Inner Text</button> 
+          <button class="mt-2 mx-3" id="boton2">
+            texto modificado via innerText
+          </button>
+        </div>
+
+        <p class="text-start text-secondary mt-3">
+          El contenido de texto del botón ID #boton se despliega a continuación
+          en el párrafo ID #btntext y es:
+        </p>
+        <p id="btntext" class="fw-bold text-center"></p>
+        <p><br><br><br><br></p>
+      </div>
+    </main>
+
+    <!-- Añadir JS en el HTML : Linkear script.js -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Bootstrap JS Script v5.3.0 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
