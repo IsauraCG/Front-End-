@@ -9,14 +9,14 @@ let carta = document.getElementById("carta");
 fetch("https://digimon-api.vercel.app/api/digimon")
   .then((response) => response.json())
   .then((data) => {
-    // console.log(data);
-    mostrarTabla(data); // invocando la funcion mostrarTabla()
+    // funcion mostrarTabla pero con los datos del fetch
+    mostrarTabla(data);
   })
+  // catch para mostrar error en caso de haberlo
   .catch((error) => console.log(error));
 
-//funcion para obtener los datos del digimon y mostrarlo en la tabla con id tabla y id contenido
+//funcion para obtener los datos del digimon y mostrarlo en la tabla
 function mostrarTabla(response) {
-  //limpiar el elemento con id contenido
   contenido.innerHTML = "";
   //recorrer los datos obtenidos de la api
 
@@ -36,8 +36,7 @@ function mostrarTabla(response) {
     //temp es un objeto temporal que contiene los datos del digimon
     //para incrustar valores en el contenido dinamicamente se necesita
     // `` comillas francesas y la anotación o estructura ${temp.key}
-    contenido.innerHTML += 
-            `<td class="text-secondary fw-bold fs-3 align-middle">${temp.name}</td>
+    contenido.innerHTML += `<td class="text-secondary fw-bold fs-3 align-middle">${temp.name}</td>
             <td class="align-middle text-center"><img src="${temp.img}" alt="" width="70px" height="70px"></td>
             <td class="text-uppercase text-center fs-5 text-primary align-middle">${temp.level}</td>
             `;
@@ -65,7 +64,7 @@ function mostrarCarta() {
 function construirCarta(params) {
   //ocular tabla con id tabla y tbody con id contenido de la tabla
   document.getElementById("tabla").style.display = "none";
-/*   document.getElementById("contenido").style.display = "none"; */
+  /*   document.getElementById("contenido").style.display = "none"; */
   tabla.innerHTML = "";
   contenido.innerHTML = "";
   carta.innerHTML = "";
